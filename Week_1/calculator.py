@@ -39,7 +39,7 @@ def start_quiz():
     for _ in range(5):
         (que, num1, num2, op) = generate_question()
         user_answer = int(input(que))
-        score += 1 if validate_answer(user_answer, num1, num2, op) else score
+        score += 1 if validate_answer(user_answer, num1, num2, op) else 0
     return score
 
 
